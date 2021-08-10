@@ -7,7 +7,7 @@
 <template>
   <div>
     <nav-bar class="home-nav">
-      <div slot="center">购物车</div>
+      <div slot="center">购物街</div>
     </nav-bar>
     <h2>首页</h2>
   </div>
@@ -26,7 +26,7 @@ export default {
 
 <style scoped>
   .home-nav{
-    background-color: var(--color-tint);
+    background-color: #ff8198;
     color: #f6f6f6;
   }
 </style>
