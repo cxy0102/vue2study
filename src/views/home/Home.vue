@@ -16,17 +16,22 @@
 
 <script>
   import NavBar from '@/components/common/navbar/NavBar'
+  import {getHomeMultidata} from '@/network/home'
 export default {
   name: "Home",
   components:{
     NavBar
+  },created() {
+    getHomeMultidata().then(res=>{
+      console.log(res);
+    })
   }
 }
 </script>
 
 <style scoped>
   .home-nav{
-    background-color: #ff8198;
+    background-color: var(--color-tint);
     color: #f6f6f6;
   }
 </style>
